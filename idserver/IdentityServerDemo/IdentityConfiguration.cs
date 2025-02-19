@@ -55,12 +55,18 @@ public static class IdentityConfiguration {
                 ClientName = "Username & Password Client",
                 AllowedGrantTypes = GrantTypes.Code,
                 RedirectUris = [
+                    "http://localhost:8081",
+                    "http://localhost:8081/",
+                    "http://localhost:8081/*",
                     "http://localhost:5173/",
                     "http://localhost:5173/*",
                     "http://localhost:5174/",
                     "http://localhost:5174/dashboard"
                 ],
                 PostLogoutRedirectUris = [
+                    "http://localhost:8081",
+                    "http://localhost:8081/",
+                    "http://localhost:8081/*",
                     "http://localhost:5173/",
                     "http://localhost:5173/*",
                     "http://localhost:5174/",
